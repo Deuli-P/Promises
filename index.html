@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<link>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./CSS/styles.css">
+</head>
+<body>
+    <div>
+        <h1>Capture d'écran</h1>
+    </div>
+    <section class="select-device-container">
+        <label>
+            <select id="select-device"></select>
+        </label>
+        <button class="btn" id="validate-btn">
+            Valider
+        </button>
+    </section>
+    <section class="video-message-container">
+        <video id="video" autoplay playsinline>Pas de média selectionné</video>
+    </section>
+    <section class="photo-container">
+        <button class="btn" id="screen-btn">
+            Prendre une photo
+        </button>
+        <canvas width="480" height="320" id="canvas-photo">
+            <div id="output-photo">
+                <img id="'photo" alt="photo prise">
+            </div>
+        </canvas>
+    </section>
+        <button id="save-photo" class="btn">Sauvegarder Photo</button>
+        <div class="link-save-container">
+            <a href="" download="" id="link"></a>
+        </div>
+</body>
+<script type="module" src="./JS/index.js"></script>
+</html>
